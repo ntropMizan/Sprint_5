@@ -19,7 +19,7 @@ class Registration:
     CREATE_ACCOUNT_BUTTON = (By.XPATH, "//button[text()='Создать аккаунт']")
 
     #Ошибки
-    ERROR_MESSAGE_EMAIL = (By.XPATH, "//*[@id='root']/div/div[2]/div[5]/form/div[2]/div[1]/span")
+    ERROR_MESSAGE_EMAIL = (By.XPATH, "//span[@class='input_span__yWPqB' and text()='Ошибка']")
     EMAIL_FIELD_ERROR = (By.CSS_SELECTOR, "div.popUp_inputColumn__RgD8n div:nth-child(1) div div")
     PASSWORD_FIELD_ERROR = (By.CSS_SELECTOR, "div.popUp_inputColumn__RgD8n div:nth-child(2) div div")
     CONFIRM_PASSWORD_FIELD_ERROR = (By.CSS_SELECTOR, "div.popUp_inputColumn__RgD8n div:nth-child(3) div div")
@@ -39,7 +39,7 @@ class AdCreation:
     CATEGORY_OPTION_TECHNOLOGY = (By.XPATH, "//span[contains(@class, 'dropDownMenu_textColor__Nyo8k') and text()='Технологии']")
 
     # Дропдаун город
-    CITY_DROPDOWN_BUTTON = (By.XPATH, "//*[@id='root']/div/div[2]/div/form/div[3]/div[1]/button")  # Кнопка для открытия списка
+    CITY_DROPDOWN_BUTTON = (By.XPATH, "//input[@name='city']/following-sibling::button[contains(@class, 'dropDownMenu_arrowDown__pfGL1')]")  # Кнопка для открытия списка
     CITY_DROPDOWN = (By.CSS_SELECTOR, "div.dropDownMenu_input__itKtw input[name='city']")  # Поле с выбранным городом
 
     #Города
